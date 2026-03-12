@@ -12,7 +12,21 @@ setup = function() {
     text("⸙", 420-i, 390);
   }  
 
-  
+  var myAnimals = ["lamb", "cat", "gerbil", "owl", "gorilla", "dog"];
+
+  fill(255, 0, 0);
+
+  var animalNum = 0;
+  while(animalNum < myAnimals.length) {
+    text(myAnimals[animalNum], 10, 30+animalNum*30);
+    animalNum++;
+  }
+
+  for(var animalNum = 0; animalNum < myAnimals.length; animalNum++) {
+    text(myAnimals[animalNum], 109, 30+animalNum*30);
+  }
+
+
 };
 
 
